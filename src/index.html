@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<title>Document</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Document</title>
-</head>
+	<body>
+		<!-- Container for entire DOM -->
+		<article id="container">
+			<!-- Log in/Register. Hide after login event -->
+			<div class="">
+				<section class="logIn__Register"></section>
+			</div>
 
-<body>
-    <article id="container"></article>
-</body>
+			<!-- hidden, display on log in event. main dashboard -->
+			<main class="main__Flex">
+				<!-- header, log out button in here -->
+				<header class="header">
+                    <div class="title">WELCOME TO NUTSHELL</div>
+                    <button class="button--logOut">GTFO</button>
 
+                </header>
+
+				<!-- daily tasks, add button -->
+				<div class="tasks">
+                    <h2>DAILY TASKS</h2>
+                    <button class="button--addTask">+</button>
+                    <section class="container__Tasks"></section>
+                    
+				<!-- events, add button -->
+				<div class="events">
+                    <h2>EVENTS</h2>
+                    <button class="button--addEvent">+</button>
+                    <section class="container__Events"></section>
+
+				<!-- daily news, add button -->
+				<div class="news">
+                    <h2>NEWS</h2>
+                    <button class="button--addNews">+</button>
+                    <section class="container__News"></section>
+
+				<!-- daily chat -->
+				<div class="chat">
+                    <h2>CHAT MESSAGES</h2>
+                    <section class="container__chat"></section>
+                    </section>
+
+				<!-- friends, add button -->
+				<div class="friends">
+                    <h2>FRIENDS LIST</h2>
+                    <button class="button--addFriend">+</button>
+                    <section class="container__Friends"></section>
+
+			</main>
+        </article>
+        <script type="module" src="./scripts/main.js"></script>
+	</body>
 </html>
