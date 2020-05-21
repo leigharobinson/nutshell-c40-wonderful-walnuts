@@ -34,7 +34,14 @@ const createNewUser = () => {
 			alert("Passwords don't match");
 		}
 		let newUserEntry = newUser(userName, email, password);
-		usersAPI.registerUsers(newUserEntry);
+		const sessionAdd = () => {
+			usersAPI.getUsers().then((users) => {
+				console.log(users);
+				const knownUser = users.find((user) => user.userName === userName);
+				sessionStorage.setItem("activeUser", knownUser.id);
+			});
+		};
+		usersAPI.registerUsers(newUserEntry).then(sessionAdd);
 	}
 };
 
