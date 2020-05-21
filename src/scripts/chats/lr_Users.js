@@ -1,3 +1,5 @@
+import addNewUserEvent from "./usersFactory.js";
+
 const outputEl = document.querySelector(".targetThis");
 
 const logInForm = () => {
@@ -19,12 +21,12 @@ const logInForm = () => {
                         <input type="text" name="userPassword" id="userPassword"></input>
                     </fieldset>
                 </form>
+                <button class="button__logIn" id="button__logIn">Log In</button>
             </div>
         `;
-        return;
       } else {
         outputEl.innerHTML = `
-        <div class="Register__form">
+        <div class="register__Form">
             <h3>Treat yo'self to Nutshell!</h3>
             <form action="" id="">
                 <fieldset>
@@ -40,9 +42,11 @@ const logInForm = () => {
                     <input type="text" name="userPasswordConfirm" id="userPasswordConfirm"></input>
                 </fieldset>
             </form>
+            <button class="button__register" id="button__register">Register</button>
         </div>
     `;
       }
+      addNewUserEvent();
     });
 };
 export default logInForm;
