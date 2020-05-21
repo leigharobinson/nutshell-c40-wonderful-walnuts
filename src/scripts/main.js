@@ -1,3 +1,3 @@
-import logInForm from "./users/users.js";
+import userLogInRegisterEvent from "./users/users.js";
 
-logInForm();
+userLogInRegisterEvent();
