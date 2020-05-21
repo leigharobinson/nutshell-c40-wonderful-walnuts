@@ -1,6 +1,7 @@
-const outputEl = document.querySelector(".logIn__Register");
+const outputEl = document.querySelector(".targetThis");
 
-const logInForm = (outputEl.innerHTML = `
+const logInForm = () =>
+  (outputEl.innerHTML = `
         <div class="logIn__form">
             <h3>Log in to Nutshell!</h3>
             <form action="" id="">

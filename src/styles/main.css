@@ -1,0 +1,36 @@
+/* #container {
+  background-image: url(./images/LogoMakr_2UCgJN.png);
+  background-repeat: no-repeat;
+} */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1em;
+  padding: 1em;
+  color: #222;
+  /* background: rgb(254, 254, 235);
+ */
+  background-color: whitesmoke;
+}
+
+.imageNut {
+  /* text-align: center; */
+  background-image: url(./images/LogoMakr_2UCgJN.png);
+  background-size: cover;
+  overflow: visible;
+  padding-top: 60px;
+}
+
+.targetThis {
+  display: flex;
+  justify-content: space-between;
+}
+.logIn__Register {
+  display: flex;
+}
+
+.header {
+  display: flex;
+}

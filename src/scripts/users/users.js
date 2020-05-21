@@ -5,17 +5,14 @@ import addNewUserEvent from "./usersFactory.js";
 
 const userLogInRegisterEvent = () => {
   document.querySelector(".targetThis").addEventListener("click", (event) => {
-    // console.log("button clicked");
     if (event.target.id === "logIn") {
-      logInForm().then(logInUserEvent());
+      logInForm();
+      logInUserEvent();
+    } else if (event.target.id === "register") {
+      registerForm();
+      addNewUserEvent();
     }
   });
 };
-
-//     } else if (event.target.id === "register") {
-//       registerForm().then(addNewUserEvent());
-//     }
-//   });
-// };
 
 export default userLogInRegisterEvent;

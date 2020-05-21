@@ -1,6 +1,7 @@
-const outputEl = document.querySelector(".logIn__Register");
+const outputEl = document.querySelector(".targetThis");
 
-const registerForm = (outputEl.innerHTML = `
+const registerForm = () =>
+  (outputEl.innerHTML = `
 <div class="register__Form">
     <h3>Treat yo'self to Nutshell!</h3>
     <form action="" id="">
