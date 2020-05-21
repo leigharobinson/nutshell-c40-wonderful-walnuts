@@ -48,7 +48,7 @@ const logInForm = () => {
     `;
 			}
 			logInUserEvent();
-			// addNewUserEvent();
+			addNewUserEvent();
 		});
 };
 export default logInForm;

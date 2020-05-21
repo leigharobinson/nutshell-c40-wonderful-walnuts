@@ -2,7 +2,12 @@ let users = [];
 
 const userAPI = {
 	getUsers() {
-		return fetch("http://localhost:8088/users").then((data) => data.json);
+		return fetch("http://localhost:8088/users")
+			.then((users) => users.json())
+			.then((parsedUsers) => {
+				console.table(parsedUsers);
+				return parsedUsers;
+			});
 	},
 	registerUsers(newUser) {
 		return fetch("http://localhost:8088/users", {

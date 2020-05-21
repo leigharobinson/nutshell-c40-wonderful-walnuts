@@ -9,14 +9,16 @@ const logInUserEvent = () => {
 };
 const logInUser = () => {
 	if (event.target.id === "button__logIn") {
-		const users = userAPI.getUsers();
 		const userName = document.querySelector("#userEmail").value;
-		const knownUser = users.find((users = () => user.userName === userName));
-		if (knownUser === undefined) {
-			alert("who you be? Register, fool!");
-		} else {
-			sessionStorage.setItem("activeUser", knownUser.id);
-		}
+		userAPI.getUsers().then((users) => {
+			console.log(users);
+			const knownUser = users.find((user) => user.userName === userName);
+			if (!knownUser) {
+				alert("who you be? Register, fool!");
+			} else {
+				sessionStorage.setItem("activeUser", knownUser.id);
+			}
+		});
 	}
 };
 
