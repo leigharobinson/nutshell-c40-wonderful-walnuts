@@ -34,3 +34,36 @@ body {
 .header {
   display: flex;
 }
+
+/* EVENTS LR*/
+.events {
+  border: solid black 1px;
+  padding: 5px;
+  margin: 5px;
+}
+.events__HeaderSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.events__HeaderSection h2 {
+  margin: 2px;
+  padding: 2px 20px 2px 2px;
+}
+.events__HeaderSection button {
+  margin: 2px;
+  padding: 3px;
+}
+.event__Entry {
+  border: solid black 1px;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.event__Entry h3,
+h4 {
+  margin: 2px;
+  padding: 3px;
+}
