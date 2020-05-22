@@ -1,7 +1,7 @@
 const outputEl = document.querySelector(".targetThis");
 
 const logInForm = () =>
-  (outputEl.innerHTML = `
+	(outputEl.innerHTML = `
         <div class="logIn__form">
             <h3>Log in to Nutshell!</h3>
             <form action="" id="">
